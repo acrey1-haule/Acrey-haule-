@@ -1,17 +1,26 @@
-# REY-BOT Installation Guide
+# REY-BOT 🤖  
 
-## Introduction
-This repository helps you set up the REY-BOT on your server and integrates a QR code for easy access.
+**REY-BOT** is a **WhatsApp bot** built using [Baileys](https://github.com/WhiskeySockets/Baileys). It can:  
+✅ Keep you always online  
+✅ Auto-view & react to statuses  
+✅ Enable anti-delete & anti-view-once  
+✅ Simulate always typing & recording  
 
-## Requirements
-- Node.js installed on your system.
-- A code editor (like VSCode) for editing files.
-- A Discord bot token (you can create one in the [Discord Developer Portal](https://discord.com/developers/applications)).
+---
 
-## Installation Steps
+## 🚀 Features  
+- **Always Online**: Keeps your WhatsApp status active  
+- **Auto View Statuses**: Reads new status updates automatically  
+- **Auto React to Statuses**: Sends random emoji reactions 👍🐅🐈☘️🌿🍀  
+- **Anti-View-Once**: Converts view-once messages into normal messages  
+- **Anti-Delete**: Recovers deleted messages  
+- **Always Typing / Recording**: Simulates typing or recording messages  
 
-### 1. Clone the Repository
-First, clone the repository to your local machine:
-```bash
-git clone https://github.com/your-username/REY-BOT.git
+---
+
+## 🛠️ Installation  
+
+### 1️⃣ **Clone the Repository**
+```shnpm install discord.js qrcode express
+git clone https://github.com/acrey1-haule/REY-BOT.git
 cd REY-BOT
