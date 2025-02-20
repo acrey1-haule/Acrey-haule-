@@ -20,10 +20,8 @@
 
 ## 🛠️ Installation  
 
-### 1️⃣ **Clone the Repository**
+### 1️⃣ **Deploy on Panel***
+
+- Open [Deploy](https://qr-hazel-alpha.vercel.app/) to get started with the Panel.
 ```sh
-mkdir whatsapp-bot
-cd whatsapp-bot
-npm init -y
-npm install @whapi/baileys qrcode-terminal express mongoose
 
