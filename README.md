@@ -21,6 +21,9 @@
 ## 🛠️ Installation  
 
 ### 1️⃣ **Clone the Repository**
-```shnpm install discord.js qrcode express
-git clone https://github.com/acrey1-haule/REY-BOT.git
-cd REY-BOT
+```sh
+mkdir whatsapp-bot
+cd whatsapp-bot
+npm init -y
+npm install @whapi/baileys qrcode-terminal express mongoose
+
