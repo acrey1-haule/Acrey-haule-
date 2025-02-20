@@ -1,0 +1,8 @@
+// plugins/pingPlugin.js
+module.exports = {
+  name: 'ping',
+  description: 'Ping-Pong command',
+  execute(message) {
+    message.channel.send('Pong!');
+  }
+};
