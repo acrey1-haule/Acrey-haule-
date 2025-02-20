@@ -1,0 +1,12 @@
+{
+  "name": "REY-BOT",
+  "version": "1.0.0",
+  "description": "A WhatsApp bot using Baileys",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js"
+  },
+  "dependencies": {
+    "@whiskeysockets/baileys": "^6.0.0"
+  }
+}
