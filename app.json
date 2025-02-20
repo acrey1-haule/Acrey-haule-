@@ -1,0 +1,10 @@
+{
+  "name": "REY-BOT",
+  "description": "A WhatsApp bot using Baileys",
+  "repository": "https://github.com/acrey-haule♤/REY-BOT",
+  "env": {
+    "WHATSAPP_SESSION": {
+      "description": "Session data for REY-BOT"
+    }
+  }
+}
