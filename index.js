@@ -1,14 +1,34 @@
 const { Client, Intents } = require('discord.js');
 const qrcode = require('qrcode');
 const express = require('express');
+const fs = require('fs');
+const path = require('path');
 const app = express();
 const client = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES] });
 
-// Discord Bot Login
 client.once('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
 });
-client.login('YOUR_BOT_TOKEN');  // Replace 'YOUR_BOT_TOKEN' with your actual Discord bot token
+
+// Load all plugins dynamically from the "plugins" directory
+client.commands = new Map();
+const pluginFiles = fs.readdirSync(path.join(__dirname, 'plugins')).filter(file => file.endsWith('.js'));
+pluginFiles.forEach(file => {
+  const plugin = require(path.join(__dirname, 'plugins', file));
+  client.commands.set(plugin.name, plugin);
+});
+
+// Handle incoming messages
+client.on('messageCreate', (message) => {
+  if (message.content.toLowerCase() === 'ping') {
+    const pingPlugin = client.commands.get('ping');
+    if (pingPlugin) {
+      pingPlugin.execute(message);
+    }
+  }
+});
+
+client.login('YOUR_BOT_TOKEN'); // Replace with your bot token
 
 // QR Code generation route
 app.get('/qr', async (req, res) => {
