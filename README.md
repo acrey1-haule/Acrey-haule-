@@ -20,8 +20,27 @@
 
 ## 🛠️ Installation  
 
-### 1️⃣ **Deploy on Panel***
+# Xeon-PairCode
+WhatsApp pairing code generator for bots
 
-- Open [Deploy](https://qr-hazel-alpha.vercel.app/) to get started with the Panel.
+## How to Use
+
+1. Clone this repository
+2. Run `npm install` to install dependencies
+3. Run the bot using `npm start` or `node index.js`
+4. Enter your WhatsApp number when prompted (with country code, e.g. +916909137213)
+5. A pairing code will be generated - use this to connect your WhatsApp
+6. The session file will be saved in the `sessions` folder
+
+## Features
+- Generate WhatsApp pairing codes
+- Auto-saves session credentials
+- Mobile number validation
+- Secure session management
+
+## Note
+- Do not share your session files with anyone
+- Always use full phone number with country code
+- The bot will automatically exit after generating the code
 ```sh
 
